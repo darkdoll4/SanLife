@@ -1,7 +1,55 @@
 [gd_scene format=3 uid="uid://2neo805xtup2"]
 
+[ext_resource type="Texture2D" uid="uid://rlidgroh2bf6" path="res://assets/Logo/SanLife logo.png" id="1_8ln24"]
+[ext_resource type="Script" uid="uid://c4nfssfo8otph" path="res://scenes/main_menu.gd" id="1_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://dmm5fo4wejayx" path="res://assets/buttons/new game button.png" id="2_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://br6gkkm5ns3fq" path="res://assets/buttons/continue button.png" id="3_oa1go"]
+[ext_resource type="Texture2D" uid="uid://capoqidhk60ak" path="res://assets/buttons/settings button.png" id="4_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://0amrjay0r6tm" path="res://assets/buttons/quit button.png" id="5_jk1qb"]
+
 [node name="MainMenu" type="Control" unique_id=1553879380]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rtw2f")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1458290743]
+layout_mode = 0
+offset_right = 479.0
+offset_bottom = 268.0
+color = Color(0.101960786, 0.11372549, 0.14117648, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1723087605]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("1_8ln24")
+
+[node name="new game" type="TextureButton" parent="." unique_id=239116148]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("2_rtw2f")
+
+[node name="continue" type="TextureButton" parent="." unique_id=25822320]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("3_oa1go")
+
+[node name="settings" type="TextureButton" parent="." unique_id=68556340]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("4_tbmy8")
+
+[node name="quit" type="TextureButton" parent="." unique_id=743389349]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("5_jk1qb")
+
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
