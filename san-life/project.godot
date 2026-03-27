@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="SanLife"
+run/main_scene="uid://2neo805xtup2"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
