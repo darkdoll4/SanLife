@@ -57,4 +57,6 @@ layout_mode = 2
 texture_normal = ExtResource("5_jk1qb")
 
 [connection signal="pressed" from="VBoxContainer/new game" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="VBoxContainer/settings" to="." method="_on_settings_pressed"]
 [connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]
