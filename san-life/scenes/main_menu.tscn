@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://rlidgroh2bf6" path="res://assets/Logo/SanLife logo.png" id="1_8ln24"]
 [ext_resource type="Script" uid="uid://c4nfssfo8otph" path="res://scenes/main_menu.gd" id="1_rtw2f"]
-[ext_resource type="Texture2D" uid="uid://dmm5fo4wejayx" path="res://assets/buttons/new game button.png" id="2_rtw2f"]
-[ext_resource type="Texture2D" uid="uid://br6gkkm5ns3fq" path="res://assets/buttons/continue button.png" id="3_oa1go"]
-[ext_resource type="Texture2D" uid="uid://capoqidhk60ak" path="res://assets/buttons/settings button.png" id="4_tbmy8"]
-[ext_resource type="Texture2D" uid="uid://0amrjay0r6tm" path="res://assets/buttons/quit button.png" id="5_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://bxue6d1ihprhf" path="res://assets/buttons/new game button.png" id="2_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://clmd4neg8l6g1" path="res://assets/buttons/continue button.png" id="3_oa1go"]
+[ext_resource type="Texture2D" uid="uid://ffjhqrfpcvb1" path="res://assets/buttons/settings button.png" id="4_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://2xmc0u8hnqyd" path="res://assets/buttons/quit button.png" id="5_jk1qb"]
 
 [node name="MainMenu" type="Control" unique_id=1553879380]
 layout_mode = 3
@@ -28,28 +28,33 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_8ln24")
 
-[node name="new game" type="TextureButton" parent="." unique_id=239116148]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=829760839]
+texture_filter = 1
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 30.0
+offset_top = 128.0
+offset_right = 154.0
+offset_bottom = 232.0
+
+[node name="new game" type="TextureButton" parent="VBoxContainer" unique_id=239116148]
+texture_filter = 1
+layout_mode = 2
 texture_normal = ExtResource("2_rtw2f")
 
-[node name="continue" type="TextureButton" parent="." unique_id=25822320]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="continue" type="TextureButton" parent="VBoxContainer" unique_id=25822320]
+texture_filter = 1
+layout_mode = 2
 texture_normal = ExtResource("3_oa1go")
 
-[node name="settings" type="TextureButton" parent="." unique_id=68556340]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="settings" type="TextureButton" parent="VBoxContainer" unique_id=68556340]
+texture_filter = 1
+layout_mode = 2
 texture_normal = ExtResource("4_tbmy8")
 
-[node name="quit" type="TextureButton" parent="." unique_id=743389349]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="quit" type="TextureButton" parent="VBoxContainer" unique_id=743389349]
+texture_filter = 1
+layout_mode = 2
 texture_normal = ExtResource("5_jk1qb")
 
-[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="VBoxContainer/new game" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

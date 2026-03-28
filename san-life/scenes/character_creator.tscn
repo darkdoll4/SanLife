@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://wt78vd2d5b1l"]
+
+[node name="CharacterCreator" type="Control" unique_id=2112353210]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=612044231]
+layout_mode = 0
+offset_right = 481.0
+offset_bottom = 270.0
+color = Color(0.6412352, 0.0003252676, 0.6464227, 1)
