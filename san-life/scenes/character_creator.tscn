@@ -31,6 +31,7 @@
 [ext_resource type="Texture2D" uid="uid://ba25we8ow7u20" path="res://assets/char creator/buttons, tabs/left arrow turn.png" id="27_7lds4"]
 [ext_resource type="Texture2D" uid="uid://ok3hv7gp1ufq" path="res://assets/char creator/buttons, tabs/left arrow turn select_hover.png" id="28_hx0hx"]
 [ext_resource type="Texture2D" uid="uid://dn2vtg45o2lck" path="res://assets/char creator/buttons, tabs/skin tones circle - all.png" id="29_1uaso"]
+[ext_resource type="Texture2D" uid="uid://f2xdwlmuxmlw" path="res://assets/char creator/buttons, tabs/light swatch.png" id="31_axsho"]
 
 [node name="CharacterCreator" type="Control" unique_id=2112353210]
 layout_mode = 3
@@ -356,19 +357,19 @@ columns = 7
 
 [node name="skintone" type="TextureButton" parent="skintoneSwatches" unique_id=208593467]
 layout_mode = 2
-texture_normal = ExtResource("29_1uaso")
+texture_normal = ExtResource("31_axsho")
 
 [node name="skintone2" type="TextureButton" parent="skintoneSwatches" unique_id=1081978606]
 layout_mode = 2
-texture_normal = ExtResource("29_1uaso")
+texture_normal = ExtResource("31_axsho")
 
 [node name="skintone3" type="TextureButton" parent="skintoneSwatches" unique_id=1425011350]
 layout_mode = 2
-texture_normal = ExtResource("29_1uaso")
+texture_normal = ExtResource("31_axsho")
 
 [node name="skintone4" type="TextureButton" parent="skintoneSwatches" unique_id=734800913]
 layout_mode = 2
-texture_normal = ExtResource("29_1uaso")
+texture_normal = ExtResource("31_axsho")
 
 [node name="skintone5" type="TextureButton" parent="skintoneSwatches" unique_id=1619583315]
 layout_mode = 2
