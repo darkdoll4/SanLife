@@ -22,6 +22,8 @@
 [ext_resource type="Texture2D" uid="uid://3fxg313o6vxj" path="res://assets/char creator/buttons, tabs/hats.png" id="19_x7ufa"]
 [ext_resource type="Texture2D" uid="uid://i2ru1yqxrmvi" path="res://assets/char creator/buttons, tabs/phone button.png" id="20_ix263"]
 [ext_resource type="Texture2D" uid="uid://c3pwpg0ruak1i" path="res://assets/char creator/buttons, tabs/phone selected.png" id="21_n1i1y"]
+[ext_resource type="Texture2D" uid="uid://40dd5psmywtx" path="res://assets/char creator/buttons, tabs/item box.png" id="23_rqrh5"]
+[ext_resource type="Texture2D" uid="uid://c130bx86fdepo" path="res://assets/char creator/buttons, tabs/item box selected.png" id="24_x7ufa"]
 
 [node name="CharacterCreator" type="Control" unique_id=2112353210]
 layout_mode = 3
@@ -170,3 +172,132 @@ scale = Vector2(0.8682855, 0.8682855)
 texture_normal = ExtResource("9_loqas")
 texture_pressed = ExtResource("10_cy6o4")
 texture_hover = ExtResource("10_cy6o4")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1367387893]
+layout_mode = 0
+offset_left = 194.0
+offset_top = 58.0
+offset_right = 480.0
+offset_bottom = 146.0
+scale = Vector2(0.9152108, 0.9152108)
+columns = 5
+
+[node name="grid cell" type="TextureButton" parent="GridContainer" unique_id=1790215992]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell2" type="TextureButton" parent="GridContainer" unique_id=8676104]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell3" type="TextureButton" parent="GridContainer" unique_id=801714786]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell4" type="TextureButton" parent="GridContainer" unique_id=155709958]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="TextureButton" type="TextureButton" parent="GridContainer" unique_id=1178142847]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell5" type="TextureButton" parent="GridContainer" unique_id=819826362]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell6" type="TextureButton" parent="GridContainer" unique_id=1576985209]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell7" type="TextureButton" parent="GridContainer" unique_id=237838957]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell8" type="TextureButton" parent="GridContainer" unique_id=1828835092]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell9" type="TextureButton" parent="GridContainer" unique_id=1547517639]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell10" type="TextureButton" parent="GridContainer" unique_id=108748343]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell11" type="TextureButton" parent="GridContainer" unique_id=1453502941]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell12" type="TextureButton" parent="GridContainer" unique_id=1093221884]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell13" type="TextureButton" parent="GridContainer" unique_id=1449986458]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell14" type="TextureButton" parent="GridContainer" unique_id=872271886]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell15" type="TextureButton" parent="GridContainer" unique_id=479166508]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell16" type="TextureButton" parent="GridContainer" unique_id=776518970]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell17" type="TextureButton" parent="GridContainer" unique_id=550180050]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell18" type="TextureButton" parent="GridContainer" unique_id=124926241]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
+
+[node name="grid cell19" type="TextureButton" parent="GridContainer" unique_id=1170980398]
+layout_mode = 2
+texture_normal = ExtResource("23_rqrh5")
+texture_pressed = ExtResource("24_x7ufa")
+texture_hover = ExtResource("24_x7ufa")
