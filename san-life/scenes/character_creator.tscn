@@ -24,6 +24,10 @@
 [ext_resource type="Texture2D" uid="uid://c3pwpg0ruak1i" path="res://assets/char creator/buttons, tabs/phone selected.png" id="21_n1i1y"]
 [ext_resource type="Texture2D" uid="uid://40dd5psmywtx" path="res://assets/char creator/buttons, tabs/item box.png" id="23_rqrh5"]
 [ext_resource type="Texture2D" uid="uid://c130bx86fdepo" path="res://assets/char creator/buttons, tabs/item box selected.png" id="24_x7ufa"]
+[ext_resource type="Texture2D" uid="uid://utl7358qc48h" path="res://assets/char creator/buttons, tabs/next button.png" id="25_nj4er"]
+[ext_resource type="Texture2D" uid="uid://dlfi76fefkex1" path="res://assets/char creator/buttons, tabs/next button hover.png" id="26_1uaso"]
+[ext_resource type="Texture2D" uid="uid://ba25we8ow7u20" path="res://assets/char creator/buttons, tabs/left arrow turn.png" id="27_7lds4"]
+[ext_resource type="Texture2D" uid="uid://ok3hv7gp1ufq" path="res://assets/char creator/buttons, tabs/left arrow turn select_hover.png" id="28_hx0hx"]
 
 [node name="CharacterCreator" type="Control" unique_id=2112353210]
 layout_mode = 3
@@ -301,3 +305,35 @@ layout_mode = 2
 texture_normal = ExtResource("23_rqrh5")
 texture_pressed = ExtResource("24_x7ufa")
 texture_hover = ExtResource("24_x7ufa")
+
+[node name="next button" type="TextureButton" parent="." unique_id=128032247]
+layout_mode = 0
+offset_left = 362.99997
+offset_top = 217.0
+offset_right = 481.99997
+offset_bottom = 263.0
+scale = Vector2(0.9075174, 0.9075174)
+texture_normal = ExtResource("25_nj4er")
+texture_pressed = ExtResource("26_1uaso")
+texture_hover = ExtResource("26_1uaso")
+
+[node name="left turn arrow" type="TextureButton" parent="." unique_id=1874227560]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 129.0
+offset_right = 56.0
+offset_bottom = 169.0
+texture_normal = ExtResource("27_7lds4")
+texture_pressed = ExtResource("28_hx0hx")
+texture_hover = ExtResource("28_hx0hx")
+
+[node name="right turn arrow" type="TextureButton" parent="." unique_id=513462010]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 130.0
+offset_right = 158.0
+offset_bottom = 170.0
+texture_normal = ExtResource("27_7lds4")
+texture_pressed = ExtResource("28_hx0hx")
+texture_hover = ExtResource("28_hx0hx")
+flip_h = true
