@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://drtqs3dwj7lia"]
+
+[ext_resource type="Script" uid="uid://dlxf15l28cdd4" path="res://license_screen.gd" id="1_h5a2x"]
+
+[node name="License screen" type="Control" unique_id=1149145932]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h5a2x")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1553544892]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(12.027336, 6.718774)
+color = Color(0.10552602, 0.11052885, 0.16047359, 1)
