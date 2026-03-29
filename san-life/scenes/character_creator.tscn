@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cf5jeiqvjqonv" path="res://assets/char creator/buttons, tabs/eyes selected .png" id="8_22p58"]
 [ext_resource type="Texture2D" uid="uid://cg3fplrsjq4v3" path="res://assets/char creator/buttons, tabs/hair.png" id="9_loqas"]
 [ext_resource type="Texture2D" uid="uid://be1h8pujooplk" path="res://assets/char creator/buttons, tabs/hair selected.png" id="10_cy6o4"]
+[ext_resource type="Shader" uid="uid://2dk0w6hlwuxj" path="res://assets/skin_shader.gdshader" id="11_xfpfe"]
 [ext_resource type="Texture2D" uid="uid://qdw46sfys8q2" path="res://assets/char creator/buttons, tabs/shirt.png" id="13_yns5i"]
 [ext_resource type="Texture2D" uid="uid://p72elpc35l83" path="res://assets/char creator/buttons, tabs/shirt selected.png" id="14_dk5wx"]
 [ext_resource type="Texture2D" uid="uid://6xl3u8oejr00" path="res://assets/char creator/buttons, tabs/hats selected.png" id="14_y4ojd"]
@@ -32,6 +33,10 @@
 [ext_resource type="Texture2D" uid="uid://ok3hv7gp1ufq" path="res://assets/char creator/buttons, tabs/left arrow turn select_hover.png" id="28_hx0hx"]
 [ext_resource type="Texture2D" uid="uid://dn2vtg45o2lck" path="res://assets/char creator/buttons, tabs/skin tones circle - all.png" id="29_1uaso"]
 [ext_resource type="Texture2D" uid="uid://f2xdwlmuxmlw" path="res://assets/char creator/buttons, tabs/light swatch.png" id="31_axsho"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xxul2"]
+shader = ExtResource("11_xfpfe")
+shader_parameter/skin_color = Color(1, 1, 1, 1)
 
 [node name="CharacterCreator" type="Control" unique_id=2112353210]
 layout_mode = 3
@@ -100,6 +105,7 @@ texture_hover = ExtResource("7_ptvhl")
 metadata/_edit_lock_ = true
 
 [node name="Characterbody" type="Sprite2D" parent="." unique_id=744542707]
+material = SubResource("ShaderMaterial_xxul2")
 position = Vector2(82, 122.000015)
 scale = Vector2(2.7376258, 2.7376258)
 texture = ExtResource("6_ucp7b")

@@ -54,7 +54,7 @@ func _on_swatch_pressed(index: int):
 		$Characterbody.texture = dark_body
 	else:
 		$Characterbody.texture = light_body
-	
+	$Characterbody.material.set_shader_parameter("skin_color", tone.color)
 	
 	
 func _on_next_pressed():
