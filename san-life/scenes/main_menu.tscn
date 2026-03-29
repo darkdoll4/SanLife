@@ -4,8 +4,12 @@
 [ext_resource type="Script" uid="uid://c4nfssfo8otph" path="res://scenes/main_menu.gd" id="1_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://bxue6d1ihprhf" path="res://assets/buttons/new game button.png" id="2_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://clmd4neg8l6g1" path="res://assets/buttons/continue button.png" id="3_oa1go"]
+[ext_resource type="Texture2D" uid="uid://cmha0lm8le3e6" path="res://assets/buttons/new game select.png" id="4_5dd4i"]
 [ext_resource type="Texture2D" uid="uid://ffjhqrfpcvb1" path="res://assets/buttons/settings button.png" id="4_tbmy8"]
 [ext_resource type="Texture2D" uid="uid://2xmc0u8hnqyd" path="res://assets/buttons/quit button.png" id="5_jk1qb"]
+[ext_resource type="Texture2D" uid="uid://d2ugwnqa1bohd" path="res://assets/buttons/continue select .png" id="6_lgwnu"]
+[ext_resource type="Texture2D" uid="uid://df0ytv10nyaoh" path="res://assets/buttons/settings selected.png" id="8_flqon"]
+[ext_resource type="Texture2D" uid="uid://bqyktdxfqiusn" path="res://assets/buttons/quit select .png" id="10_rcqid"]
 
 [node name="MainMenu" type="Control" unique_id=1553879380]
 layout_mode = 3
@@ -40,21 +44,29 @@ offset_bottom = 232.0
 texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("2_rtw2f")
+texture_pressed = ExtResource("4_5dd4i")
+texture_hover = ExtResource("4_5dd4i")
 
 [node name="continue" type="TextureButton" parent="VBoxContainer" unique_id=25822320]
 texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("3_oa1go")
+texture_pressed = ExtResource("6_lgwnu")
+texture_hover = ExtResource("6_lgwnu")
 
 [node name="settings" type="TextureButton" parent="VBoxContainer" unique_id=68556340]
 texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("4_tbmy8")
+texture_pressed = ExtResource("8_flqon")
+texture_hover = ExtResource("8_flqon")
 
 [node name="quit" type="TextureButton" parent="VBoxContainer" unique_id=743389349]
 texture_filter = 1
 layout_mode = 2
 texture_normal = ExtResource("5_jk1qb")
+texture_pressed = ExtResource("10_rcqid")
+texture_hover = ExtResource("10_rcqid")
 
 [connection signal="pressed" from="VBoxContainer/new game" to="." method="_on_new_game_pressed"]
 [connection signal="pressed" from="VBoxContainer/continue" to="." method="_on_continue_pressed"]
