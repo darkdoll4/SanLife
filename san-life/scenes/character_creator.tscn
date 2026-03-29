@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bsgpgkhyq50fm" path="res://scenes/character_creator.gd" id="1_7lds4"]
 [ext_resource type="Texture2D" uid="uid://c2mpsnfr6if0d" path="res://assets/char creator/buttons, tabs/dither background.png" id="1_xm6ha"]
 [ext_resource type="Texture2D" uid="uid://dvdwi83j3v8vg" path="res://assets/char creator/buttons, tabs/skin tone exe.png" id="2_ucp7b"]
+[ext_resource type="Texture2D" uid="uid://cu4egtyckedlo" path="res://assets/characters/female/dark female .png" id="3_hx0hx"]
 [ext_resource type="Texture2D" uid="uid://coh1snbbivumt" path="res://assets/char creator/buttons, tabs/starter exe.png" id="3_oy0w6"]
 [ext_resource type="Texture2D" uid="uid://d0w8vgtb3lnk" path="res://assets/char creator/buttons, tabs/female button.png" id="4_f0wb7"]
 [ext_resource type="Texture2D" uid="uid://c8keqmxsrb1ix" path="res://assets/char creator/buttons, tabs/male button.png" id="5_22p58"]
@@ -39,6 +40,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7lds4")
+light_body = ExtResource("6_ucp7b")
+dark_body = ExtResource("3_hx0hx")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=612044231]
 layout_mode = 0
@@ -95,7 +98,7 @@ texture_pressed = ExtResource("7_ptvhl")
 texture_hover = ExtResource("7_ptvhl")
 metadata/_edit_lock_ = true
 
-[node name="LightFemale" type="Sprite2D" parent="." unique_id=744542707]
+[node name="Characterbody" type="Sprite2D" parent="." unique_id=744542707]
 position = Vector2(82, 122.000015)
 scale = Vector2(2.7376258, 2.7376258)
 texture = ExtResource("6_ucp7b")
@@ -341,7 +344,7 @@ texture_pressed = ExtResource("28_hx0hx")
 texture_hover = ExtResource("28_hx0hx")
 flip_h = true
 
-[node name="skintone grid" type="GridContainer" parent="." unique_id=28416384]
+[node name="skintoneSwatches" type="GridContainer" parent="." unique_id=28416384]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 189.0
@@ -351,87 +354,87 @@ theme_override_constants/h_separation = 5
 theme_override_constants/v_separation = 3
 columns = 7
 
-[node name="skintone" type="TextureButton" parent="skintone grid" unique_id=208593467]
+[node name="skintone" type="TextureButton" parent="skintoneSwatches" unique_id=208593467]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone2" type="TextureButton" parent="skintone grid" unique_id=1081978606]
+[node name="skintone2" type="TextureButton" parent="skintoneSwatches" unique_id=1081978606]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone3" type="TextureButton" parent="skintone grid" unique_id=1425011350]
+[node name="skintone3" type="TextureButton" parent="skintoneSwatches" unique_id=1425011350]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone4" type="TextureButton" parent="skintone grid" unique_id=734800913]
+[node name="skintone4" type="TextureButton" parent="skintoneSwatches" unique_id=734800913]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone5" type="TextureButton" parent="skintone grid" unique_id=1619583315]
+[node name="skintone5" type="TextureButton" parent="skintoneSwatches" unique_id=1619583315]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone6" type="TextureButton" parent="skintone grid" unique_id=1009374862]
+[node name="skintone6" type="TextureButton" parent="skintoneSwatches" unique_id=1009374862]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone7" type="TextureButton" parent="skintone grid" unique_id=1656382911]
+[node name="skintone7" type="TextureButton" parent="skintoneSwatches" unique_id=1656382911]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone8" type="TextureButton" parent="skintone grid" unique_id=1879952388]
+[node name="skintone8" type="TextureButton" parent="skintoneSwatches" unique_id=1879952388]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone9" type="TextureButton" parent="skintone grid" unique_id=1913251829]
+[node name="skintone9" type="TextureButton" parent="skintoneSwatches" unique_id=1913251829]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone10" type="TextureButton" parent="skintone grid" unique_id=880037937]
+[node name="skintone10" type="TextureButton" parent="skintoneSwatches" unique_id=880037937]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone11" type="TextureButton" parent="skintone grid" unique_id=1357200726]
+[node name="skintone11" type="TextureButton" parent="skintoneSwatches" unique_id=1357200726]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone12" type="TextureButton" parent="skintone grid" unique_id=138354844]
+[node name="skintone12" type="TextureButton" parent="skintoneSwatches" unique_id=138354844]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone13" type="TextureButton" parent="skintone grid" unique_id=123540842]
+[node name="skintone13" type="TextureButton" parent="skintoneSwatches" unique_id=123540842]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone14" type="TextureButton" parent="skintone grid" unique_id=1815716350]
+[node name="skintone14" type="TextureButton" parent="skintoneSwatches" unique_id=1815716350]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone15" type="TextureButton" parent="skintone grid" unique_id=504303562]
+[node name="skintone15" type="TextureButton" parent="skintoneSwatches" unique_id=504303562]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone16" type="TextureButton" parent="skintone grid" unique_id=203945614]
+[node name="skintone16" type="TextureButton" parent="skintoneSwatches" unique_id=203945614]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone17" type="TextureButton" parent="skintone grid" unique_id=1308210298]
+[node name="skintone17" type="TextureButton" parent="skintoneSwatches" unique_id=1308210298]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone18" type="TextureButton" parent="skintone grid" unique_id=631331311]
+[node name="skintone18" type="TextureButton" parent="skintoneSwatches" unique_id=631331311]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone19" type="TextureButton" parent="skintone grid" unique_id=788919800]
+[node name="skintone19" type="TextureButton" parent="skintoneSwatches" unique_id=788919800]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone20" type="TextureButton" parent="skintone grid" unique_id=1488304843]
+[node name="skintone20" type="TextureButton" parent="skintoneSwatches" unique_id=1488304843]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
-[node name="skintone21" type="TextureButton" parent="skintone grid" unique_id=698292978]
+[node name="skintone21" type="TextureButton" parent="skintoneSwatches" unique_id=698292978]
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 

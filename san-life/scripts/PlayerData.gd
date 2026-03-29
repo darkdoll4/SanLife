@@ -7,6 +7,7 @@ var is_female: bool = false
 
 #Appearance
 var skin_color: Color = Color(1.0, 0.85, 0.7)
+var use_dark_base: bool = false
 var eye_color: Color = Color(0.2, 0.4, 0.8)
 var hair_index: int = 0
 var hair_color: Color = Color(0.3, 0.15, 0.05)
