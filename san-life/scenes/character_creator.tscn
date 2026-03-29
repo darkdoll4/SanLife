@@ -108,10 +108,10 @@ texture_hover = ExtResource("8_22p58")
 
 [node name="phone button" type="TextureButton" parent="." unique_id=1137213730]
 layout_mode = 0
-offset_left = 428.0
-offset_top = 61.999996
-offset_right = 482.0
-offset_bottom = 104.0
+offset_left = 431.0
+offset_top = 62.000004
+offset_right = 485.0
+offset_bottom = 104.00001
 rotation = -1.5744984
 scale = Vector2(0.7815635, 0.815705)
 texture_normal = ExtResource("20_ix263")
