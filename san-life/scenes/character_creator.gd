@@ -13,8 +13,21 @@ var skin_tones = [
 	{color = Color("#c47a45"), dark = false},
 	{color = Color("#a0522d"), dark = true},
 	{color = Color("#7d3f1e"), dark = true},
-	{color = Color("#5c2a0e"), dark = true},
-	{color = Color("#3b1a08"), dark = true}, 
+	{color = Color("733614ff"), dark = true}, 
+	{color = Color("f4d4c7ff"), dark = false},
+	{color = Color("e9b6acff"), dark = false},
+	{color = Color("d8917eff"), dark = false},
+	{color = Color("cd7258ff"), dark = false},
+	{color = Color("a15035ff"), dark = true},
+	{color = Color("843826ff"), dark = true},
+	{color = Color("702e1dff"), dark = true},
+	{color = Color("eedaa6ff"), dark = false},
+	{color = Color("e4be80ff"), dark = false},
+	{color = Color("c0a15fff"), dark = false},
+	{color = Color("b98146ff"), dark = false},
+	{color = Color("905e2cff"), dark = true},
+	{color = Color("71481bff"), dark = true},
+	{color = Color("583b17ff"), dark = true},
 ]
 
 
