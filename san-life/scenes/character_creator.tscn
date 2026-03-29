@@ -368,18 +368,22 @@ layout_mode = 2
 texture_normal = ExtResource("31_axsho")
 
 [node name="skintone4" type="TextureButton" parent="skintoneSwatches" unique_id=734800913]
+modulate = Color(0.74978, 0.74978, 0.74977994, 1)
 layout_mode = 2
 texture_normal = ExtResource("31_axsho")
 
 [node name="skintone5" type="TextureButton" parent="skintoneSwatches" unique_id=1619583315]
+modulate = Color(0.6255971, 0.6255971, 0.6255971, 1)
 layout_mode = 2
-texture_normal = ExtResource("29_1uaso")
+texture_normal = ExtResource("31_axsho")
 
 [node name="skintone6" type="TextureButton" parent="skintoneSwatches" unique_id=1009374862]
+modulate = Color(0.4198129, 0.41981322, 0.4198131, 1)
 layout_mode = 2
-texture_normal = ExtResource("29_1uaso")
+texture_normal = ExtResource("31_axsho")
 
 [node name="skintone7" type="TextureButton" parent="skintoneSwatches" unique_id=1656382911]
+modulate = Color(0.7539839, 0.75398386, 0.75398386, 1)
 layout_mode = 2
 texture_normal = ExtResource("29_1uaso")
 
