@@ -3,18 +3,20 @@
 [ext_resource type="Script" uid="uid://bsgpgkhyq50fm" path="res://scenes/character_creator.gd" id="1_7lds4"]
 [ext_resource type="Texture2D" uid="uid://c2mpsnfr6if0d" path="res://assets/char creator/buttons, tabs/dither background.png" id="1_xm6ha"]
 [ext_resource type="Texture2D" uid="uid://dvdwi83j3v8vg" path="res://assets/char creator/buttons, tabs/skin tone exe.png" id="2_ucp7b"]
-[ext_resource type="Texture2D" uid="uid://cu4egtyckedlo" path="res://assets/characters/female/dark female .png" id="3_hx0hx"]
+[ext_resource type="Texture2D" uid="uid://bt261cci13xr7" path="res://assets/characters/female/light female, no eyes (official).png" id="2_xfpfe"]
 [ext_resource type="Texture2D" uid="uid://coh1snbbivumt" path="res://assets/char creator/buttons, tabs/starter exe.png" id="3_oy0w6"]
+[ext_resource type="Texture2D" uid="uid://dgav3bdgby65l" path="res://assets/characters/female/dark female no eyes (official).png" id="3_xxul2"]
 [ext_resource type="Texture2D" uid="uid://d0w8vgtb3lnk" path="res://assets/char creator/buttons, tabs/female button.png" id="4_f0wb7"]
 [ext_resource type="Texture2D" uid="uid://c8keqmxsrb1ix" path="res://assets/char creator/buttons, tabs/male button.png" id="5_22p58"]
 [ext_resource type="Texture2D" uid="uid://cnq53kb8yl7wi" path="res://assets/char creator/buttons, tabs/female selected.png" id="5_mdm0h"]
-[ext_resource type="Texture2D" uid="uid://cceg717b2o4yn" path="res://assets/characters/female/light female.png" id="6_ucp7b"]
 [ext_resource type="Texture2D" uid="uid://owrrq304vgo6" path="res://assets/char creator/buttons, tabs/eyes.png" id="7_f0wb7"]
 [ext_resource type="Texture2D" uid="uid://dx3vqbtub8bwk" path="res://assets/char creator/buttons, tabs/male selected.png" id="7_ptvhl"]
 [ext_resource type="Texture2D" uid="uid://cf5jeiqvjqonv" path="res://assets/char creator/buttons, tabs/eyes selected .png" id="8_22p58"]
 [ext_resource type="Texture2D" uid="uid://cg3fplrsjq4v3" path="res://assets/char creator/buttons, tabs/hair.png" id="9_loqas"]
 [ext_resource type="Texture2D" uid="uid://be1h8pujooplk" path="res://assets/char creator/buttons, tabs/hair selected.png" id="10_cy6o4"]
 [ext_resource type="Shader" uid="uid://2dk0w6hlwuxj" path="res://assets/skin_shader.gdshader" id="11_xfpfe"]
+[ext_resource type="Texture2D" uid="uid://bw4ecijvjmjbe" path="res://assets/characters/female/female eyelash.png" id="12_e8qli"]
+[ext_resource type="Texture2D" uid="uid://8oj42f08wo6s" path="res://assets/characters/female/female pupils.png" id="13_kschl"]
 [ext_resource type="Texture2D" uid="uid://qdw46sfys8q2" path="res://assets/char creator/buttons, tabs/shirt.png" id="13_yns5i"]
 [ext_resource type="Texture2D" uid="uid://p72elpc35l83" path="res://assets/char creator/buttons, tabs/shirt selected.png" id="14_dk5wx"]
 [ext_resource type="Texture2D" uid="uid://6xl3u8oejr00" path="res://assets/char creator/buttons, tabs/hats selected.png" id="14_y4ojd"]
@@ -46,8 +48,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_7lds4")
-light_body = ExtResource("6_ucp7b")
-dark_body = ExtResource("3_hx0hx")
+light_body = ExtResource("2_xfpfe")
+dark_body = ExtResource("3_xxul2")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=612044231]
 layout_mode = 0
@@ -108,7 +110,19 @@ metadata/_edit_lock_ = true
 material = SubResource("ShaderMaterial_xxul2")
 position = Vector2(82, 122.000015)
 scale = Vector2(2.7376258, 2.7376258)
-texture = ExtResource("6_ucp7b")
+texture = ExtResource("2_xfpfe")
+region_enabled = true
+region_rect = Rect2(0, 0, 30, 47)
+
+[node name="eyelash" type="Sprite2D" parent="Characterbody" unique_id=51376053]
+position = Vector2(-7.415747e-08, -6.198883e-06)
+texture = ExtResource("12_e8qli")
+region_enabled = true
+region_rect = Rect2(0, 0, 30, 47)
+
+[node name="pupil" type="Sprite2D" parent="Characterbody" unique_id=1095314854]
+position = Vector2(0, -5.722046e-06)
+texture = ExtResource("13_kschl")
 region_enabled = true
 region_rect = Rect2(0, 0, 30, 47)
 
